@@ -80,6 +80,9 @@
     userEmail = "ashley.fae.uwu@gmail.com";
   };
 
+  programs.foot.enable = true;
+  programs.zellij.enable = true;
+
   programs.caelestia = {
     enable = true;
     systemd = {
@@ -768,86 +771,86 @@
     package = null;
     portalPackage = null;
     settings = {
-    	"$mod" = "SUPER";
-	"$terminal" = "kitty";
-	"$browser" = "zen";
+        "$mod" = "SUPER";
+        "$terminal" = "foot";
+        "$browser" = "zen";
 
-	env = [
-	  "XCURSOR_SIZE, 24"
-	  "HYPRCURSOR_SIZE, 24"
-	];
+        env = [
+            "XCURSOR_SIZE, 24"
+                "HYPRCURSOR_SIZE, 24"
+        ];
 
-	monitor = [
-	  "DP-1, 1920x1080@144, 0x0, 1"
-	  "DP-2, 1920x1080@60, -1920x0, 1"
-	  "HDMI-A-1, 1920x1080@60, 1920x0, 1"
-	];
+        monitor = [
+            "DP-1, 1920x1080@144, 0x0, 1"
+                "DP-2, 1920x1080@60, -1920x0, 1"
+                "HDMI-A-1, 1920x1080@60, 1920x0, 1"
+        ];
 
-	general = {
-	  gaps_in = 5;
-	  gaps_out = 20;
-	  border_size = 2;
-	};
+        general = {
+            gaps_in = 5;
+            gaps_out = 20;
+            border_size = 2;
+        };
 
-	decoration = {
-	  rounding = 10;
+        decoration = {
+            rounding = 10;
 
-	  blur = {
-	    enabled = true;
-	    xray = false;
-	    special = false;
-	    ignore_opacity = true;
-	    new_optimizations = true;
-	    popups = true;
-	    input_methods = true;
-	    size = 8;
-	    passes = 2;
-	  };
+            blur = {
+                enabled = true;
+                xray = false;
+                special = false;
+                ignore_opacity = true;
+                new_optimizations = true;
+                popups = true;
+                input_methods = true;
+                size = 8;
+                passes = 2;
+            };
 
-	  shadow = {
-	    enabled = true;
-	    range = 20;
-	    render_power = 3;
-	  };
-	};
+            shadow = {
+                enabled = true;
+                range = 20;
+                render_power = 3;
+            };
+        };
 
-	animations = {
-	  enabled = true;
-	};
+        animations = {
+            enabled = true;
+        };
 
-    bindm = [
-        "$mod, mouse:272, movewindow"
-    ];
+        bindm = [
+            "$mod, mouse:272, movewindow"
+        ];
 
-	bind = [
-	  "$mod, T, exec, $terminal"
-	  "$mod, B, exec, $browser"
-	  "$mod, Q, killactive"
+        bind = [
+            "$mod, T, exec, $terminal"
+                "$mod, B, exec, $browser"
+                "$mod, Q, killactive"
 
-	  "$mod, SUPER_L, exec, caelestia-shell ipc call drawers toggle launcher"
-	  "$mod, L, exec, caelestia-shell ipc call lock lock"
-	  "Ctrl+Alt, Delete, exec, caelestia-shell ipc call drawers toggle session"
+                "$mod, SUPER_L, exec, caelestia-shell ipc call drawers toggle launcher"
+                "$mod, L, exec, caelestia-shell ipc call lock lock"
+                "Ctrl+Alt, Delete, exec, caelestia-shell ipc call drawers toggle session"
 
-	  "$mod, 1, workspace, 1"
-	  "$mod, 2, workspace, 2"
-	  "$mod, 3, workspace, 3"
-	  "$mod, 4, workspace, 4"
-	  "$mod, 5, workspace, 5"
-	  "$mod, 6, workspace, 6"
-	  "$mod, 7, workspace, 7"
-	  "$mod, 8, workspace, 8"
-	  "$mod, 9, workspace, 9"
+                "$mod, 1, workspace, 1"
+                "$mod, 2, workspace, 2"
+                "$mod, 3, workspace, 3"
+                "$mod, 4, workspace, 4"
+                "$mod, 5, workspace, 5"
+                "$mod, 6, workspace, 6"
+                "$mod, 7, workspace, 7"
+                "$mod, 8, workspace, 8"
+                "$mod, 9, workspace, 9"
 
-	  "$mod+Shift, 1, movetoworkspacesilent, 1"
-	  "$mod+Shift, 2, movetoworkspacesilent, 2"
-	  "$mod+Shift, 3, movetoworkspacesilent, 3"
-	  "$mod+Shift, 4, movetoworkspacesilent, 4"
-	  "$mod+Shift, 5, movetoworkspacesilent, 5"
-	  "$mod+Shift, 6, movetoworkspacesilent, 6"
-	  "$mod+Shift, 7, movetoworkspacesilent, 7"
-	  "$mod+Shift, 8, movetoworkspacesilent, 8"
-	  "$mod+Shift, 9, movetoworkspacesilent, 9"
-	];
+                "$mod+Shift, 1, movetoworkspacesilent, 1"
+                "$mod+Shift, 2, movetoworkspacesilent, 2"
+                "$mod+Shift, 3, movetoworkspacesilent, 3"
+                "$mod+Shift, 4, movetoworkspacesilent, 4"
+                "$mod+Shift, 5, movetoworkspacesilent, 5"
+                "$mod+Shift, 6, movetoworkspacesilent, 6"
+                "$mod+Shift, 7, movetoworkspacesilent, 7"
+                "$mod+Shift, 8, movetoworkspacesilent, 8"
+                "$mod+Shift, 9, movetoworkspacesilent, 9"
+                ];
     };
   };
 }

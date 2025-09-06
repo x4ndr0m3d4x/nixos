@@ -42,7 +42,6 @@
 		# System packages (can use inputs from here)
 		({ pkgs, ... }: {
 		    environment.systemPackages = with pkgs; [
-			kitty
 			discord
 			spotify
 			pavucontrol
