@@ -80,7 +80,28 @@
     userEmail = "ashley.fae.uwu@gmail.com";
   };
 
-  programs.foot.enable = true;
+  programs.foot = {
+      enable = true;
+      settings = {
+          main = {
+              letter-spacing = "0";
+              font = "monospace:size=12";
+              dpi-aware = "no";
+              pad = "10x10";
+              bold-text-in-bright = "no";
+              gamma-correct-blending = "no";
+          };
+
+          scrollback.lines = "10000";
+
+          cursor = {
+              style = "beam";
+              beam-thickness = "1.5";
+          };
+
+          colors.alpha = "0.78";
+      };
+  };
   programs.zellij.enable = true;
 
   programs.caelestia = {
